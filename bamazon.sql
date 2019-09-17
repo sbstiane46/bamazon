@@ -1,10 +1,11 @@
 DROP DATABASE IF EXISTS bamazon_db;
 CREATE DATABASE bamazon_db;
 USE bamazon_db;
+
 CREATE TABLE products(
-    item_id integer auto_increment not null,
-    product_name VARCHAR (50) not NULL,
-    department_name VARCHAR (50) not NULL,
+    item_id INTEGER NOT NULL AUTO_INCREMENT,
+    product_name VARCHAR (100) not NULL,
+    department_name VARCHAR (100) not NULL,
     price DECIMAL (10,2) not NULL,
     stock_quantity INT NOT NULL,
     primary key (item_id)
@@ -18,7 +19,7 @@ VALUES
 ("suspension kit", "automotive", 1800.99, 8),
 ("table alarm", "home goods", 19.99, 17),
 ("lamp", "home goods", 199.99, 15),
-("toyota headlights", "automotive", 499.99, 25)
+("toyota headlights", "automotive", 499.99, 25);
 
 SELECT * FROM products;
 

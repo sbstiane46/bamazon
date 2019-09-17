@@ -37,7 +37,7 @@ var promptCustomer = function(res) {
         name: "id",
         message: "Select item's ID to purchase.\n",
         validate: function(value) {
-          if (!isNaN(value) && value < 31) {
+          if (!isNaN(value) && value < 8) {
             return true;
           }
           return false;
